@@ -17,3 +17,7 @@ After I built and deployed [deno-redirect](https://github.com/johnstonmatt/deno-
 ## in action
 
 [redirect.runningon.workers.dev](https://redirect.runningon.workers.dev) will redirect you here.
+
+## what about cloudflare's redirect services?
+
+They are almost certainly a better solution. This was a toy project to see how easy it was to use with cloudflare workers.
