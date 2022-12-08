@@ -1,0 +1,11 @@
+name = "redirect"
+main = "src/index.ts"
+compatibility_date = "2022-12-08"
+usage_model = "bundled"
+env = { }
+
+[triggers]
+crons = [ ]
+
+[vars]
+TO = "https://github.com/johnstonmatt/cloudflare-workers-redirect"

@@ -1,0 +1,12 @@
+name: publish
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+jobs:
+  cndi-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Deploy to Cloudflare Workers with Wrangler
+        uses: cloudflare/wrangler-action@2.0.0
