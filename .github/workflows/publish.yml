@@ -1,15 +1,15 @@
-name: publish
 on:
   push:
     branches:
       - main
-      - 'releases/**'
+
 jobs:
-  publish:
-    runs-on: ubuntu-20.04
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
     steps:
-      - name: Deploy to Cloudflare Workers with Wrangler
+      - uses: actions/checkout@v3
+      - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-
